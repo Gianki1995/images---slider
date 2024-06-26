@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  transition: 2s;
+  top: 0;
+  left: -100%;
+}
+
+#slider {
+  border: 6px solid red;
+  position: relative;
+  height: 100svh;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  max-height: 300px;
+}
+
+.visible {
+  left: 0;
+}
+
+.next {
+  left: 100%;
+  transition: 0s;
+}
